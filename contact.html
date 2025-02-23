@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Hypetunez</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="bg-gray-900 text-white p-4 flex flex-wrap justify-center md:justify-between items-center">
+        <h1 class="text-2xl font-bold w-full text-center md:w-auto md:text-left">Hypetunez</h1>
+        <nav class="flex flex-wrap justify-center space-x-4 md:space-x-6 text-sm md:text-base">
+            <a href="index.html" class="hover:underline">Home</a>
+            <a href="trending.html" class="hover:underline">Trending Songs</a>
+            <a href="submitsongs.html" class="hover:underline">Submit Songs</a>
+           
+    </header>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <nav id="mobile-menu" class="hidden flex flex-col bg-gray-900 text-white p-4 space-y-2 md:hidden">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="trending.html" class="hover:underline">Trending Songs</a>
+        <a href="submit-songs.html" class="hover:underline">Submit Songs</a>
+        
+    </nav>
+
+    <!-- Page Content -->
+    <section class="p-6 text-center flex-grow">
+        <div class="max-w-3xl mx-auto bg-white p-6 shadow-lg rounded-lg">
+            <h2 class="text-xl font-semibold mb-4">Contact Us</h2>
+            <p class="text-lg mb-6">We'd love to hear from you! Reach out to us for inquiries, support, or anything else.</p>
+
+            <div class="space-y-6">
+                <!-- Contact Details -->
+                <div class="text-left space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <span class="font-semibold">Email:</span>
+                        <a href="mailto:inforhypetunez@gmail.com" class="text-blue-600 hover:underline">inforhypetunez@gmail.com</a>
+                    </div>
+
+                    <div class="flex items-center space-x-2">
+                        <span class="font-semibold">Location:</span>
+                        <span class="text-gray-700">Gambia, West Africa</span>
+                    </div>
+
+                    <div class="flex items-center space-x-2">
+                        <span class="font-semibold">Opening Hours:</span>
+                        <span class="text-gray-700">Everyday: 9:00 AM - 9:00 PM GMT</span>
+                    </div>
+
+                    <div class="flex items-center space-x-2">
+                        <span class="font-semibold">Direct Call:</span>
+                        <a href="tel:+2206826562" class="text-blue-600 hover:underline">+220-682-6562</a>
+                    </div>
+
+                    <!-- WhatsApp Link -->
+                    <div class="flex items-center space-x-2">
+                        <span class="font-semibold">WhatsApp Us:</span>
+                        <a href="https://wa.me/2206826562" class="text-blue-600 hover:underline">Click here to message us on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center p-4 mt-auto">
+        <p>&copy; 2025 Hypetunez.com. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript to toggle the mobile menu -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            menuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

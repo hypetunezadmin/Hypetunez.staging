@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypetunez|Trending Songs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/YOUR_FA_KIT.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="bg-gray-900 text-white p-4 flex flex-wrap justify-center md:justify-between items-center">
+        <h1 class="text-2xl font-bold w-full text-center md:w-auto md:text-left">Hypetunez</h1>
+        <nav class="flex flex-wrap justify-center space-x-4 md:space-x-6 text-sm md:text-base">
+            <a href="index.html" class="hover:underline">Home</a>
+            <a href="submitsongs.html" class="hover:underline">Submit Songs</a>
+            <a href="contact.html" class="hover:underline">Contact</a>
+        </nav>
+    </header>
+    
+    <!-- Search Bar -->
+    <div class="p-4 flex justify-center">
+        <div class="relative w-full max-w-md">
+            <i class="fas fa-search absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500"></i>
+            <input type="text" id="searchInput" placeholder="Search..." class="px-10 py-2 rounded-md border border-gray-300 text-black w-full focus:outline-none focus:ring-2 focus:ring-gray-500">
+        </div>
+    </div>
+
+   <!-- Music Section -->
+<section class="p-6 text-center flex-grow grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="musicList">
+
+    <div class="max-w-sm mx-auto bg-white p-4 shadow-lg rounded-lg music-item">
+        <div class="w-full h-60 mx-auto">
+            <img src="covers/teni.jpeg" alt="teni" class="w-full h-full object-cover rounded-md">
+        </div>
+        <h2 class="text-lg font-semibold mt-2">Teni - Money</h2>
+        <a href="songs/Teni-Money Hypetunez.com.MP3" download class="bg-gray-800 text-white px-4 py-2 rounded mt-2 inline-flex items-center">
+            <i class="fas fa-download mr-2"></i>Download
+        </a>
+        
+    </div>
+
+    <div class="max-w-sm mx-auto bg-white p-4 shadow-lg rounded-lg music-item">
+        <div class="w-full h-60 mx-auto">
+            <img src="covers/Burna Boy ♡.jpeg" alt="pBurna Boy" class="w-full h-full object-cover rounded-md">
+        </div>
+        <h2 class="text-lg font-semibold mt-2">Burna Boy - Update</h2>
+        <a href="songs/Burna Boy_Update Hypetunez.com.MP3" download class="bg-gray-800 text-white px-4 py-2 rounded mt-2 inline-flex items-center">
+            <i class="fas fa-download mr-2"></i>Download
+        </a>
+        <p></p>
+    </div>
+
+    <div class="max-w-sm mx-auto bg-white p-4 shadow-lg rounded-lg music-item">
+        <div class="w-full h-60 mx-auto">
+            <img src="covers/rema.jpeg" alt="rema" class="w-full h-full object-cover rounded-md">
+        </div>
+        <h2 class="text-lg font-semibold mt-2">Rema-Baby(Is it a Crime)</h2>
+        <a href="songs/Rema-Baby(Is it a Crime) Hypetunez.MP3" download class="bg-gray-800 text-white px-4 py-2 rounded mt-2 inline-flex items-center">
+            <i class="fas fa-download mr-2"></i>Download
+        </a>
+        <p></p>
+    </div>
+
+    <div class="max-w-sm mx-auto bg-white p-4 shadow-lg rounded-lg music-item">
+        <div class="w-full h-60 mx-auto">
+            <img src="covers/SHALIPOPI.jpeg" alt="SHALIPOPI" class="w-full h-full object-cover rounded-md">
+        </div>
+        <h2 class="text-lg font-semibold mt-2">Shalipopi-Cast ft Odumodublvck Mp3</h2>
+        <a href="songs/Shalipopi-Cast ft Odumodublvck hypetunez.com.MP3" download class="bg-gray-800 text-white px-4 py-2 rounded mt-2 inline-flex items-center">
+            <i class="fas fa-download mr-2"></i>Download
+        </a>
+        <p></p>
+    </div>
+
+    <div class="max-w-sm mx-auto bg-white p-4 shadow-lg rounded-lg music-item">
+        <div class="w-full h-60 mx-auto">
+            <img src="covers/Ruger – Red Flags (Official Video).jpeg" alt="ruger" class="w-full h-full object-cover rounded-md">
+        </div>
+        <h2 class="text-lg font-semibold mt-2">Ruger & Tiwa Savage - Toma Toma</h2>
+        <a href="songs/Ruger & Tiwa Savage Toma Toma Hypetunez.com.MP3" download class="bg-gray-800 text-white px-4 py-2 rounded mt-2 inline-flex items-center">
+            <i class="fas fa-download mr-2"></i>Download
+        </a>
+        <p></p>
+    </div>
+    <div class="max-w-sm mx-auto bg-white p-4 shadow-lg rounded-lg music-item">
+        <div class="w-full h-60 mx-auto">
+            <img src="covers/jahmiel.jpeg" alt="jahmiel" class="w-full h-full object-cover rounded-md">
+        </div>
+        <h2 class="text-lg font-semibold mt-2"> Jahmiel_Live</h2>
+        <a href="songs/Jahmiel_Live My Life Hypetunez.com.MP3" download class="bg-gray-800 text-white px-4 py-2 rounded mt-2 inline-flex items-center">
+            <i class="fas fa-download mr-2"></i>Download
+        </a>
+        <p></p>
+    </div>
+
+
+</section>
+
+
+    <!-- No Results Message -->
+    <p id="noResults" class="text-center text-gray-500 hidden">No results found.</p>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center p-4 mt-auto">
+        <p>&copy; 2025 Hypetunez.com All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Search Function
+        document.getElementById('searchInput').addEventListener('input', function () {
+    let searchValue = this.value.toLowerCase().trim();
+    let musicItems = document.querySelectorAll('.music-item');
+    let hasResults = false;
+
+    musicItems.forEach(item => {
+        let title = item.querySelector('h2').innerText.toLowerCase();
+        let descriptionElement = item.querySelector('p');
+        let description = descriptionElement ? descriptionElement.innerText.toLowerCase() : ""; // Handle empty <p> tags
+
+        if (title.includes(searchValue) || description.includes(searchValue)) {
+            item.classList.remove('hidden'); // Show matching items
+            hasResults = true;
+        } else {
+            item.classList.add('hidden'); // Hide non-matching items without affecting the grid
+        }
+    });
+
+    // Show "No results found" if no matches
+    document.getElementById('noResults').classList.toggle('hidden', hasResults);
+});
+
+    </script>
+</body>
+</html>

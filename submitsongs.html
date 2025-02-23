@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Songs |Hypetunez</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="bg-gray-900 text-white p-4 flex flex-wrap justify-center md:justify-between items-center">
+        <h1 class="text-2xl font-bold w-full text-center md:w-auto md:text-left">Hypetunez</h1>
+        <nav class="flex flex-wrap justify-center space-x-4 md:space-x-6 text-sm md:text-base">
+            <a href="index.html" class="hover:underline">Home</a>
+            <a href="trending.html" class="hover:underline">Trending Songs</a>
+           
+            <a href="contact.html" class="hover:underline">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <nav id="mobile-menu" class="hidden flex flex-col bg-gray-900 text-white p-4 space-y-2 md:hidden">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="trending.html" class="hover:underline">Trending Songs</a>
+
+        <a href="contact.html" class="hover:underline">Contact</a>
+    </nav>
+
+    <!-- Page Content -->
+    <section class="p-6 text-center flex-grow">
+        <div class="max-w-3xl mx-auto bg-white p-6 shadow-lg rounded-lg">
+            <h2 class="text-xl font-semibold mb-4">Submit Your Song</h2>
+            <p class="text-lg mb-6">To submit your song and cover photo, please send them to us via WhatsApp. Make sure to include the song and the cover photo file.</p>
+            <p class="text-md mb-4 text-gray-600">Each song submission is free.</p>
+            <p class="text-md mb-6 text-gray-600">If you have any questions, feel free to contact us via WhatsApp as well.</p>
+
+            <!-- WhatsApp Link -->
+            <a href="https://wa.me/2206826562" class="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition-all">Send to WhatsApp</a>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center p-4 mt-auto">
+        <p>&copy; 2025 Hypetunez. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript to toggle the mobile menu -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            menuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
